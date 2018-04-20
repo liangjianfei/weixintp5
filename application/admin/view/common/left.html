@@ -8,18 +8,101 @@
                 <!-- /Page Sidebar Header -->
                 <!-- Sidebar Menu -->
                 <ul class="nav sidebar-menu">
-                    <!--Dashboard--> 
+                    <!--Dashboard-->
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-gear"></i>
+                            <span class="menu-text">系统设置</span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="{:url('tags/lst')}">
+                                    <span class="menu-text">
+                                        全局控制                                  </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('tags/lst')}">
+                                    <span class="menu-text">
+                                        访问设置                                  </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('tags/lst')}">
+                                    <span class="menu-text">
+                                        推广运营                                  </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('tags/lst')}">
+                                    <span class="menu-text">
+                                        API接口                                  </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-file-text"></i>
+                            <span class="menu-text">发布管理</span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="{:url('cate/lst')}">
+                                    <span class="menu-text">
+                                        分类管理                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('article/add')}">
+                                    <span class="menu-text">
+                                        发布文章                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('article/lst')}">
+                                    <span class="menu-text">
+                                        文章列表                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
                     <li>
                         <a href="#" class="menu-dropdown">
                             <i class="menu-icon fa fa-user"></i>
-                            <span class="menu-text">管理员 </span>
+                            <span class="menu-text">用户管理 </span>
                             <i class="menu-expand"></i>
                         </a>
                         <ul class="submenu">
                             <li>
                                 <a href="{:url('admin/lst')}">
                                     <span class="menu-text">
-                                        管理列表                                    </span>
+                                        会员信息                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('admin/lst')}">
+                                    <span class="menu-text">
+                                        徒弟管理                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('admin/lst')}">
+                                    <span class="menu-text">
+                                        黑名单                                    </span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
@@ -29,73 +112,194 @@
                     <li>
                         <a href="#" class="menu-dropdown">
                             <i class="menu-icon fa fa-list"></i>
-                            <span class="menu-text">栏目管理</span>
+                            <span class="menu-text">数据管理</span>
                             <i class="menu-expand"></i>
                         </a>
                         <ul class="submenu">
                             <li>
                                 <a href="{:url('cate/lst')}">
                                     <span class="menu-text">
-                                        栏目列表                                   </span>
+                                        访问统计                                   </span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
-                        </ul>                            
-                    </li> 
-
-                    <li>
-                        <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa fa-file-text"></i>
-                            <span class="menu-text">文档</span>
-                            <i class="menu-expand"></i>
-                        </a>
-                        <ul class="submenu">
                             <li>
-                                <a href="{:url('article/lst')}">
+                                <a href="{:url('cate/lst')}">
                                     <span class="menu-text">
-                                        文章列表                                    </span>
+                                        分享统计                                   </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('cate/lst')}">
+                                    <span class="menu-text">
+                                        扣量统计                                   </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('cate/lst')}">
+                                    <span class="menu-text">
+                                        提成统计                                   </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('cate/lst')}">
+                                    <span class="menu-text">
+                                        徒弟统计                                   </span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
                         </ul>                            
                     </li> 
 
+
+
                     <li>
                         <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa fa-link"></i>
-                            <span class="menu-text">友情链接</span>
+                            <i class="menu-icon fa fa-jpy"></i>
+                            <span class="menu-text">财务管理</span>
                             <i class="menu-expand"></i>
                         </a>
                         <ul class="submenu">
                             <li>
                                 <a href="{:url('links/lst')}">
                                     <span class="menu-text">
-                                        链接列表                                   </span>
+                                        日提现总额                                   </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('links/lst')}">
+                                    <span class="menu-text">
+                                        会员日收益总额                                   </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('links/lst')}">
+                                    <span class="menu-text">
+                                        会员收益排行                                   </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('links/lst')}">
+                                    <span class="menu-text">
+                                        等待提现                                   </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('links/lst')}">
+                                    <span class="menu-text">
+                                        已经提现                                   </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('links/lst')}">
+                                    <span class="menu-text">
+                                        拒绝支付                                   </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('links/lst')}">
+                                    <span class="menu-text">
+                                        退回支付                                   </span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
                         </ul>                            
-                    </li> 
+                    </li>
 
                     <li>
                         <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa fa-gear"></i>
-                            <span class="menu-text">系统</span>
+                            <i class="menu-icon fa fa-tags"></i>
+                            <span class="menu-text">广告管理 </span>
                             <i class="menu-expand"></i>
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="{:url('tags/lst')}">
+                                <a href="{:url('admin/lst')}">
                                     <span class="menu-text">
-                                        Tags标签管理                                  </span>
+                                        广告位                                    </span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
-                        </ul>                            
-                    </li>                        
-                    
-                                           
-                    
+                            <li>
+                                <a href="{:url('admin/lst')}">
+                                    <span class="menu-text">
+                                        是否显示广告位                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('admin/lst')}">
+                                    <span class="menu-text">
+                                        广告文章管理                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('admin/lst')}">
+                                    <span class="menu-text">
+                                        图片列表                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('admin/lst')}">
+                                    <span class="menu-text">
+                                        文章底部推荐广告发布                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('admin/lst')}">
+                                    <span class="menu-text">
+                                        返回广告                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('admin/lst')}">
+                                    <span class="menu-text">
+                                        文章弹出小图标                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-tasks"></i>
+                            <span class="menu-text">任务管理</span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="{:url('article/lst')}">
+                                    <span class="menu-text">
+                                        日常任务管理                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('article/add')}">
+                                    <span class="menu-text">
+                                        精彩活动管理                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
                 </ul>
                 <!-- /Sidebar Menu -->
             </div>
